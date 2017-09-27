@@ -11,9 +11,29 @@ namespace hsql {
   struct ColumnDefinition {
     enum DataType {
       UNKNOWN,
-      TEXT,
-      INT,
-      DOUBLE
+	  DATE,
+	  TIME,
+	  DATETIME,
+	  TIMESTAMP,
+	  TINYINT,
+	  SMALLINT,
+	  MEDIUMINT,
+	  INTEGER,
+	  INT,
+	  BIGINT,
+	  FLOAT,
+	  DOUBLE,
+	  CHAR,
+	  VARCHAR,
+	  NVARCHAR,
+	  TINYTEXT,
+	  TEXT,
+	  MEDIUMTEXT,
+	  LONGTEXT,
+	  TINYBLOB,
+	  BLOB,
+	  MEDIUMBLOB,
+	  LONGBLOB,
     };
 
     ColumnDefinition(char* name, DataType type);

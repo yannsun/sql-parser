@@ -1,6 +1,5 @@
 // Possible source for more tokens https://www.sqlite.org/lang_keywords.html
 
-//////////////////////////
 // Select Statement
 SELECT
 TOP
@@ -32,8 +31,7 @@ FULL
 CROSS
 USING
 NATURAL
-// Select Statement
-//////////////////////
+
 // Data Definition
 CREATE
 TABLE
@@ -68,8 +66,7 @@ ADD
 COLUMN
 BEFORE
 AFTER
-// Data Definition
-////////////////////////
+
 // Data Manipulation
 INSERT
 VALUES
@@ -106,7 +103,6 @@ DEALLOCATE
 PREPARE
 EXECUTE
 
-///////////////////////////////
 // other statements
 RENAME
 EXPLAIN
@@ -128,6 +124,8 @@ CALL
 FOR
 TO
 ARRAY
+AUTO_INCREMENT
+UNSIGNED
 
 
 // Expressions
@@ -157,9 +155,24 @@ OFF
 // Data types
 DATE
 TIME
+DATETIME
 TIMESTAMP
+TINYINT
+SMALLINT
+MEDIUMINT
 INTEGER
 INT
+BIGINT
+FLOAT
 DOUBLE
+CHAR
+VARCHAR
 NVARCHAR
+TINYTEXT
 TEXT
+MEDIUMTEXT
+LONGTEXT
+TINYBLOB
+BLOB
+MEDIUMBLOB
+LONGBLOB
