@@ -59,7 +59,7 @@ int yyerror(YYLTYPE* llocp, SQLParserResult* result, yyscan_t scanner, const cha
 // %output  "bison_parser.cpp"
 // %defines "bison_parser.h"
 
-// Tell bison to create a reentrant parser
+// Tell bison to create a reentrant parser可重入版本
 %define api.pure full
 
 // Prefix the parser
@@ -436,7 +436,7 @@ column_type:
 	|	TINYINT { $$ = ColumnDefinition::TINYINT; } 
 	|	SMALLINT { $$ = ColumnDefinition::SMALLINT; } 
 	|	MEDIUMINT { $$ = ColumnDefinition::MEDIUMINT; } 
-	|	INTEGER { $$ = ColumnDefinition::INTERGER; } 
+	|	INTEGER { $$ = ColumnDefinition::INTEGER; } 
 	|	INT { $$ = ColumnDefinition::INT; } 
 	|	BIGINT { $$ = ColumnDefinition::BIGINT; } 
 	|	FLOAT { $$ = ColumnDefinition::FLOAT; } 
@@ -450,7 +450,7 @@ column_type:
 	|	LONGTEXT { $$ = ColumnDefinition::LONGTEXT; } 
 	|	TINYBLOB { $$ = ColumnDefinition::TINYBLOB; } 
 	|	BLOB { $$ = ColumnDefinition::BLOB; } 
-	|	MEDIUMBLOB { $$ = ColumnDefinition::MEDIYMBLOB; } 
+	|	MEDIUMBLOB { $$ = ColumnDefinition::MEDIUMBLOB; } 
 	|	LONGBLOB { $$ = ColumnDefinition::LONGBLOB; } 
 	;
 

@@ -2900,7 +2900,7 @@ yyreduce:
 
   case 47:
 #line 439 "bison_parser.y" /* yacc.c:1646  */
-    { (yyval.uval) = ColumnDefinition::INTERGER; }
+    { (yyval.uval) = ColumnDefinition::INTEGER; }
 #line 2905 "bison_parser.cpp" /* yacc.c:1646  */
     break;
 
@@ -2984,7 +2984,7 @@ yyreduce:
 
   case 61:
 #line 453 "bison_parser.y" /* yacc.c:1646  */
-    { (yyval.uval) = ColumnDefinition::MEDIYMBLOB; }
+    { (yyval.uval) = ColumnDefinition::MEDIUMBLOB; }
 #line 2989 "bison_parser.cpp" /* yacc.c:1646  */
     break;
 
